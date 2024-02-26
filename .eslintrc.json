@@ -8,12 +8,14 @@
       "files": [
         "*.ts"
       ],
+      "plugins": [
+        "import"
+      ],
       "extends": [
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended",
         "plugin:@angular-eslint/recommended",
-        "plugin:@angular-eslint/template/process-inline-templates",
-        "plugin:import/recommended"
+        "plugin:@angular-eslint/template/process-inline-templates"
       ],
       "rules": {
         "@angular-eslint/directive-selector": [
@@ -41,8 +43,7 @@
               "**/internal/**"
             ]
           }
-        ],
-        "import/no-unresolved": "off"
+        ]
       }
     },
     // Do not use no-internal-modules for barrels
